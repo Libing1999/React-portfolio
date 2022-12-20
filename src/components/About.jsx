@@ -4,7 +4,6 @@ const About = () => {
   const info = [
     { text: "Months experience", count: "04" },
     { text: "Completed Projects", count: "05" },
-   
   ];
   return (
     <section className="py-10 text-white">
@@ -41,7 +40,6 @@ const About = () => {
               </a>
             </div>
           </div>
-        
         </div>
       </div>
     </section>
