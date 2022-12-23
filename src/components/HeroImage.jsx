@@ -27,12 +27,15 @@ const HeroImage = () => {
           <button className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2 mt-10">
             Contact Us
           </button>
+          
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-4">
+            <a href="https://www.linkedin.com/in/libin-george-b0b452259">
             {socialMedia?.map((icon) => (
               <div key={icon} className="text-gray-600 hover:text-white">
                 <ion-icon name={icon}></ion-icon>
               </div>
             ))}
+            </a>
           </div>
         </div>
       </div>

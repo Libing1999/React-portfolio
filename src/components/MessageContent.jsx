@@ -1,12 +1,12 @@
-import React from 'react'
-import NavBar from './NavBar'
+import React from "react";
+import NavBar from "./NavBar";
 
 const MessageContent = () => {
   return (
     <div>
-     <NavBar/>
+      <NavBar />
     </div>
-  )
-}
+  );
+};
 
-export default MessageContent
+export default MessageContent;
