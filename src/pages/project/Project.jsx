@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import project1 from "../assets/images/project1.jpg";
-import project3 from "../assets/images/project3.gif";
-import project5 from "../assets/images/project5.webp";
+import project1 from "../../assets/images/project1.jpg";
+import project3 from "../../assets/images/project3.gif";
+import project5 from "../../assets/images/project5.webp";
 
 import "swiper/css";
 import "swiper/css/pagination";

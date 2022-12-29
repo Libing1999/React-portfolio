@@ -1,24 +1,26 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer.jsx";
-import HeroImage from "./components/HeroImage";
-import MessageBot from "./components/MessageBot";
-import NavBar from "./components/NavBar";
-import Project from "./components/Project";
-import Skill from "./components/Skill";
+import About from "./pages/about/About";
+import NavBar from "./layouts/NavBar"
+import Home from "./pages/home/Home"
+import Skill from "./pages/skill/Skill"
+import Project from "./pages/project/Project"
+import Contact from "./pages/contact/Contact"
+import Footer from "./layouts/Footer.jsx"
+
+
 function App() {
   return (
-    <div>
-      <div className="max-w-screen-2xl">
-        <MessageBot />
-        <NavBar />
-        <HeroImage />
-        <About />
-        <Skill />
-        <Project />
-        <Contact />
-        <Footer/>
-      </div>
+    <div className="max-w-7xl mx-auto">
+      <NavBar/>
+      <Home/>
+      <About/>
+      <Skill/>
+      <Project/>
+      <Contact/>
+      <Footer/>
+
+
+
+     
     </div>
   );
 }

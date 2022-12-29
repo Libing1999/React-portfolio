@@ -12,13 +12,14 @@ const NavBar = () => {
   ];
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      const nav = document.querySelector("nav");
+      // const nav = document.querySelector("nav");
       window.scrollY > 0 ? setSticky(true) : setSticky(false);
     });
   }, []);
   return (
+    <div className="max-w-7xl mx-auto">
     <nav
-      className={`max-w-screen-2xl max-md:bg-gray-400 fixed w-full left-0 top-0 z-[999] ${
+      className={` md:bg-gray-400 fixed w-full left-0 top-0 z-[999] ${
         sticky ? "md:bg-white/60 text-white" : "text-white"
       }`}
     >
@@ -65,6 +66,7 @@ const NavBar = () => {
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 

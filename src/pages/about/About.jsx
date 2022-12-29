@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   const info = [
     { text: "Months experience", count: "04" },
-    { text: "Completed Projects", count: "05" },
+    { text: "Completed Projects", count: "07" },
   ];
   return (
     <section className="py-10 text-white">

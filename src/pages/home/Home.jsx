@@ -1,10 +1,10 @@
 import React from "react";
-import hero4 from "../assets/images/hero4.jpg";
+import hero4 from "../../assets/images/hero4.jpg";
+import { Link } from "react-router-dom";
 const HeroImage = () => {
   const socialMedia = ["logo-instagram", "logo-facebook", "logo-linkedin"];
-
   return (
-    <section className="min-h-screen flex py-10 md:flex-row flex-col items-center ">
+    <section className="min-h-screen max-w-7xl mx-auto flex py-10 md:flex-row flex-col items-center ">
       <div className="flex-1 flex items-center justify-center h-full mt-16">
         <img
           src={hero4}
@@ -24,18 +24,18 @@ const HeroImage = () => {
           <h4 className="md:text-2xl text-lg md:leading-normal  leading-5 mt-2 font-bold text-gray-500">
             Frontend Developer
           </h4>
-          <button className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2 mt-10">
-            Contact Us
-          </button>
-          
+          <Link to="/contact">
+            <button className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2 mt-10">
+              Contact Us
+            </button>
+          </Link>
+
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-4">
-            <a href="https://www.linkedin.com/in/libin-george-b0b452259">
             {socialMedia?.map((icon) => (
               <div key={icon} className="text-gray-600 hover:text-white">
                 <ion-icon name={icon}></ion-icon>
               </div>
             ))}
-            </a>
           </div>
         </div>
       </div>
