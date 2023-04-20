@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "image": "images/project1.jpg",
+    "title": "Country Guide App",
+    "codelink": "https://github.com/Libing1999/Country-Guide-App",
+    "demolink": "https://libin-country-info.netlify.app"
+  },
+  {
+    "id": 2,
+    "image": "images/project3.gif",
+    "title": "Weather App",
+    "codelink": "https://github.com/Libing1999/Weather-app.git",
+    "demolink": "https://github.com/Libing1999/Weather-app.git"
+  },
+  {
+    "id": 3,
+    "image": "images/project5.webp",
+    "title": "Tech Serve Website",
+    "codelink": "https://github.com/Libing1999/Form-validation-Javascript.git",
+    "demolink": "https://github.com/Libing1999/Form-validation-Javascript.git"
+  },
+  {
+    "id": 4,
+    "image": "images/project2.png",
+    "title": "Code Easy",
+    "codelink": "https://github.com/Manuashokan18/codeeasy.git",
+    "demolink": "https://code-easy.netlify.app/"
+  }
+]

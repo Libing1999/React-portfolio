@@ -17,13 +17,13 @@ const NavBar = () => {
     });
   }, []);
   return (
-    <div className="max-w-7xl mx-auto">
+    
     <nav
-      className={` md:bg-gray-400 fixed w-full left-0 top-0 z-[999] ${
-        sticky ? "md:bg-white/60 text-white" : "text-white"
+      className={` md:bg-red-400 fixed  left-0 top-0 z-[999]  ${
+        sticky ? "md:bg-white/60 text-white" : "text-white "
       }`}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between ">
         <div className="mx-7">
           <h4 className="text-4xl uppercase font-bold">
             L<span className="text-cyan-600">i</span>b
@@ -52,7 +52,7 @@ const NavBar = () => {
           <ion-icon name="menu"></ion-icon>
         </div>
         <div
-          className={`md:hidden  text-gray-900 absolute w-2/4 h-screen px-7 py-2 font-medium bg-white top-0 duration-300 ${
+          className={`md:hidden  text-gray-900 absolute w-1/4 h-screen px-7 py-2 font-medium bg-white top-0 duration-300 ${
             open ? "right-0" : "right-[-100%]"
           } `}
         >
@@ -66,7 +66,9 @@ const NavBar = () => {
         </div>
       </div>
     </nav>
-    </div>
+  
+  
+   
   );
 };
 

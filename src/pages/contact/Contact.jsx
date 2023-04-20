@@ -1,8 +1,9 @@
 import React from "react";
+import Button from "../../components/Button";
 
 const Contact = () => {
   return (
-    <section className="py-10 px-3 text-white">
+    <section className="py-10 px-3 text-white  max-w-7xl mx-auto">
       <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
           Contact <span className="text-cyan-600">Me</span>
@@ -13,9 +14,7 @@ const Contact = () => {
             <input type="text" placeholder="Your Name" />
             <input type="Email" placeholder="Your Email Address" />
             <textarea placeholder="Your message" rows={10}></textarea>
-            <button className="bg-cyan-600 w-fit font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2 mt-10">
-              Send Message
-            </button>
+            <Button>Send </Button>
           </form>
           <div className="flex flex-col gap-7">
             <div className="flex gap-4 w-full items-center">

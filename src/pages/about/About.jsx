@@ -1,5 +1,4 @@
 import React from "react";
-
 const About = () => {
   const info = [
     { text: "Months experience", count: "04" },
@@ -25,7 +24,7 @@ const About = () => {
               <div className="flex mt-14 md:justify-center items-center gap-7">
                 {info.map((content) => (
                   <div key={content.text}>
-                    <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                    <h3 className="md:text-4xl text-2xl font-semibold text-white animate-pulse">
                       {content.count}
                       <span className="text-cyan-600">+</span>
                     </h3>
@@ -34,7 +33,7 @@ const About = () => {
                 ))}
               </div>
               <div className="flex justify-center">
-              <a href="src\assets\libin.pdf" download>
+              <a href="/assets/pdf/cv.pdf" download="cv.pdf">
                 <button className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex  items-center gap-2 mt-14">
                   Download CV
                 </button>
