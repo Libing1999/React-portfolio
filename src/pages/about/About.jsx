@@ -1,9 +1,9 @@
 import React from "react";
 const About = () => {
-  const info = [
-    { text: "Months experience", count: "04" },
-    { text: "Completed Projects", count: "07" },
-  ];
+  // const info = [
+  //   { text: "Months experience", count: "04" },
+  //   { text: "Completed Projects", count: "07" },
+  // ];
   return (
     <section className="py-10 text-white">
       <div className="text-center mt-8">
@@ -21,7 +21,7 @@ const About = () => {
                 websites for my clients. And I create web pages with UI/UX user
                 interface. Iam very passionate and dedicate to my work.
               </p>
-              <div className="flex mt-14 md:justify-center items-center gap-7">
+              {/* <div className="flex mt-14 md:justify-center items-center gap-7">
                 {info.map((content) => (
                   <div key={content.text}>
                     <h3 className="md:text-4xl text-2xl font-semibold text-white animate-pulse">
@@ -31,7 +31,7 @@ const About = () => {
                     <span>{content.text}</span>
                   </div>
                 ))}
-              </div>
+              </div> */}
               <div className="flex justify-center">
               <a href="/assets/pdf/cv.pdf" download="cv.pdf">
                 <button className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex  items-center gap-2 mt-14">
