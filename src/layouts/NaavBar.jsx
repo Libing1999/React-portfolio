@@ -4,9 +4,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 const navigation = [
   { name: "HOME", href: "#", current: true },
   { name: "ABOUT", href: "#", current: false },
-  { name: "SKILLS", href: "#", current: false },
-  { name: "PROJECTS", href: "#", current: false },
-  { name: "CONTACT", href: "#", current: false },
+  // { name: "RESUME", href: "#", current: false },
+  // { name: "PROJECTS", href: "#", current: false },
+  // { name: "CONTACT", href: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -40,8 +40,8 @@ export default function NaavBar() {
                   <span className="text-cyan-600">i</span>n
                 </h4>
               </div>
-              <div className="flex flex-1 items-end justify-end sm:items-stretch sm:justify-end sm:mt-8 ">
-                <div className="hidden sm:ml-6 sm:block ">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center sm:mt-8 ">
+                <div className="hidden sm:ml-80 sm:block ">
                   <div className="flex space-x-4 ">
                     {navigation.map((item) => (
                       <a
@@ -51,14 +51,15 @@ export default function NaavBar() {
                           item.current
                             ? "bg-gray-900 text-white hover:text-cyan-600"
                             : "text-white hover:bg-gray-900 hover:text-cyan-600",
-                          "px-3 py-2  text-lg font-medium "
+                          "px-3 py-2  text-sm font-large "
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </a>
-                    ))}
-                  </div>
+                    ))}         
+                  <a href=" " className="text-white hover:text-cyan-600 px-3 py-2  text-sm font-large pl-52 sm:visible">RESUME</a>
+                  </div>        
                 </div>
               </div>
             </div>
