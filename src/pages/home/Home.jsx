@@ -1,6 +1,5 @@
 import React from "react";
 import hero4 from "../../assets/images/hero4.jpg";
-import { Link } from "react-router-dom";
 import Slide from "react-reveal/Slide";
 
 const HeroImage = () => {
@@ -60,12 +59,6 @@ const HeroImage = () => {
               💤
             </span>{" "} Dreamer
           </h4>
-          {/* <Link to="/contact">
-            <button className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2 mt-10">
-              Contact Us
-            </button>
-          </Link> */}
-
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-4">
             {socialMedia?.map((item) => (
               <a
