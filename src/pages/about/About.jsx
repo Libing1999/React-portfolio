@@ -21,7 +21,7 @@ const About = () => {
               </p>
               </div>
               <p className="pt-6 sm:pr-80 pr-48 text-gray-400"> Mail me @{" "}
-                <a href="https://mail.google.com/" className="text-gray-400 hover:text-white">libing8490@gmail.com</a></p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" className="text-gray-400 hover:text-white">libing8490@gmail.com</a></p>
           
           </div>
         </div>
