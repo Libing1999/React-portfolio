@@ -2,11 +2,9 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "HOME", href: "#", current: true },
-  { name: "ABOUT", href: "#", current: false },
-  // { name: "RESUME", href: "#", current: false },
-  // { name: "PROJECTS", href: "#", current: false },
-  // { name: "CONTACT", href: "#", current: false },
+  { name: "HOME", href: "/", current: true },
+  { name: "ABOUT", href: "/About", current: true },
+   { name: "RESUME", href: "/Resume", current: true },
 ];
 
 function classNames(...classes) {
@@ -35,30 +33,18 @@ export default function NaavBar() {
                 </Disclosure.Button>
               </div>
               <div className="md:mt-6">
-                <h4 className="text-4xl uppercase font-bold">
+               <a href="/"> <h4 className="text-4xl uppercase font-bold">
                   L<span className="text-cyan-600">i</span>b
                   <span className="text-cyan-600">i</span>n
-                </h4>
+                </h4></a>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center sm:mt-8 ">
                 <div className="hidden sm:ml-80 sm:block ">
-                  <div className="flex space-x-4 ">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white hover:text-cyan-600"
-                            : "text-white hover:bg-gray-900 hover:text-cyan-600",
-                          "px-3 py-2  text-sm font-large "
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}         
-                  <a href=" " className="text-white hover:text-cyan-600 px-3 py-2  text-sm font-large pl-52 sm:visible">RESUME</a>
+                  <div className="flex space-x-4 ">             
+                    <a href="/" className="text-white hover:text-cyan-600 px-3 py-2  text-sm font-large pl-8">Home</a> 
+                    <a href="/about" className="text-white hover:text-cyan-600 px-3 py-2  text-sm font-large">About</a> 
+                  <a href="/resume" className="text-white hover:text-cyan-600 px-3 py-2  text-sm font-large pl-52 sm:visible">Resume</a>
+                  
                   </div>        
                 </div>
               </div>
