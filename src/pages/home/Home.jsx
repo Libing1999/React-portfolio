@@ -1,6 +1,6 @@
 import React from "react";
 import hero4 from "../../assets/images/hero4.jpg";
-import Slide from "react-reveal/Slide";
+// import Slide from "react-reveal/Slide";
 
 const HeroImage = () => {
   const socialMedia = [
@@ -31,20 +31,20 @@ const HeroImage = () => {
       </div>
       <div className="flex-1">
         <div className="md:text-left text-center ">
-          <Slide left>
+          {/* <Slide left> */}
             <h1 className="md:text-5xl md:mt-0 mt-4 text-2xl md:leading-normal  leading-10 text-white font-bold">
               <span className="text-cyan-600 md:text-6xl text-5xl">
                 Hello!
                 <br />
               </span>{" "}
             </h1>{" "}
-          </Slide>
-          <Slide right>
+          {/* </Slide> */}
+          {/* <Slide right> */}
             {" "}
             <h1 className="md:text-5xl text-2xl md:leading-normal  leading-10 text-white font-bold">
               My Name is Libin George{" "}
             </h1>{" "}
-          </Slide>
+          {/* </Slide> */}
 
           <h4 className="md:text-2xl text-lg md:leading-normal  leading-5 mt-2 font-bold text-gray-500">
             <span role="img" aria-label="tiger">
