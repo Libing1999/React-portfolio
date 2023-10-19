@@ -1,5 +1,5 @@
 # My Porfolio
 
 
-Stack : React JS
+Stack : React JS,
         Html, tailwind css
